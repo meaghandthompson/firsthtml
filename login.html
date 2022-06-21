@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function dologin() {
+            const u = document.getElementById('usernameinput');
+            const p = document.getElementById('pwdinput');
+            if (u.value === 'admin' && p.value === 'secret') {
+                window.location = 'welcome.html';
+            }
+            else {
+                window.location = 'unauthorized.html';
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div>
+        username:
+        <input type="text" id="usernameinput" />
+    </div>
+    <div>
+        password:
+        <input type="password" id="pwdinput" />
+    </div>
+    <input type="button" value="login" onclick="dologin()" />
+</body>
+
+</html>

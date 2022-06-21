@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="styles2.css"/>
+        <script type="text/javascript">
+            function onPushItClicked() {
+                const d = document.getElementById('contentdiv');
+                d.style.color='blue';
+                d.innerText="something different";
+                window.location='login.html';
+            }
+        </script>
+    </head>
+    <body>
+        <h1>My First Webpage</h1>
+        <p class="Meg1 Meg2">
+            This is my first experiment with building a webpage.
+        </p>
+        <b>This is bold</b>
+        <i>This is italic</i>
+        <u>This is underline</u>
+        <br/>
+        <a href="http://www.google.com">This is a link</a>
+        <div class="Meg1">This text is inside a div.</div>
+        <span style="color:red;">This text is</span>
+        <span style="color:green;">across two span tags.</span>
+        <div class="Meg2">Here I am testing Meg2</div>
+
+        <div id="contentdiv">Here is some more text</div>
+        <input type="button" value="login" onclick="onPushItClicked()"></input>
+    </body>
+</html>
